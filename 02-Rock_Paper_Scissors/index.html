@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>02-Rock_Paper_Scissors</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <script src="./main.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <h5>
+                        Rock Paper Scissors
+                    </h5>
+
+                    <!-- Rock -->
+                    <button onclick="
+                        
+                        const computerMove2 = pickComputerMove();
+                        
+                        let result = '';
+
+                        if(computerMove2==='Rock')
+                            {
+                                result='Tie';
+                            }
+                        else if(computerMove2==='Paper')
+                            {
+                                result='You Lose';
+                            }
+                        else if(computerMove2==='Scissors')
+                            {
+                                result='You Win';
+                            }
+
+                        alert(`You picked Rock. Computer picked ${computerMove2}. ${result}.`);
+                    ">
+                        Rock
+                    </button>
+
+                    <!-- Paper -->
+                    <button onclick="
+                        
+                        const computerMove = pickComputerMove();
+                        
+                        let result = '';
+
+                        if(computerMove==='Rock')
+                            {
+                                result='You Win';
+                            }
+                        else if(computerMove==='Paper')
+                            {
+                                result='Tie';
+                            }
+                        else if(computerMove==='Scissors')
+                            {
+                                result='You Lose';
+                            }
+
+                        alert(`You picked Paper. Computer picked ${computerMove}. ${result}.`);
+                    ">
+                        Paper
+                    </button>
+
+                    <!-- Scissors -->
+                    <button onclick="
+                        
+                        const computerMove = pickComputerMove();
+                        
+                        let result = '';
+
+                        if(computerMove==='Rock')
+                            {
+                                result='You Lose';
+                            }
+                        else if(computerMove==='Paper')
+                            {
+                                result='You Win';
+                            }
+                        else if(computerMove==='Scissors')
+                            {
+                                result='Tie';
+                            }
+
+                        alert(`You picked Scissors. Computer picked ${computerMove}. ${result}.`);
+                    ">
+                        Scissors
+                    </button>
+
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
