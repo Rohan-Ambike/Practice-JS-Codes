@@ -9,3 +9,4 @@ const myArr2 = new Array(1, 2, 3, 4);
 
 myArr.push(6);
 console.log(myArr);
+console.log("Done");
